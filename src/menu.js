@@ -1,3 +1,19 @@
+function createMenu() {
+    const content = document.getElementById("content");
+
+    const menu = document.createElement("div");
+    menu.classList.add("menu");
+
+    menu.appendChild(
+        createMenuItem(
+            "Krabby Patty",
+            "$1.25"
+        )
+    );
+    
+    content.appendChild(menu);
+}
+
 function createMenuItem(name, price) {
     const menuItem = document.createElement("div");
     menuItem.classList.add("menu-item");
@@ -9,7 +25,7 @@ function createMenuItem(name, price) {
     foodPrice.textContent = price;
 
     const foodImg = document.createElement("img");
-    foodImg.src = `images/food/${name.replace(/\s+/g, '-').toLowerCase()}..png`;
+    foodImg.src = `images/food/${name.replace(/\s+/g, '-').toLowerCase()}.png`;
     foodImg.alt = `${name}`;
 
     menuItem.appendChild(foodImg);
@@ -18,3 +34,5 @@ function createMenuItem(name, price) {
 
     return menuItem;
 }
+
+export default createMenu;
