@@ -1,6 +1,4 @@
 function createContact() {
-    const content = document.getElementById("content");
-
     const contact = document.createElement("div");
     contact.classList.add("contact");
 
@@ -26,7 +24,13 @@ function createContact() {
     contact.appendChild(address);
     contact.appendChild(restaurantLocation);
 
-    content.appendChild(contact);
+    return contact;
 }
 
-export default createContact;
+function loadContact() {
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(createContact());
+}
+
+export default loadContact;

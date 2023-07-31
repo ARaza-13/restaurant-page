@@ -1,6 +1,4 @@
 function createHomePage() {
-    const content = document.getElementById("content");
-
     const home = document.createElement("div");
     home.classList.add("home");
 
@@ -18,7 +16,13 @@ function createHomePage() {
     home.appendChild(logo);
     home.appendChild(paragraph);
 
-    content.appendChild(home);
+    return home;
 }
 
-export default createHomePage;
+function loadHome() {
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(createHomePage());
+}
+
+export default loadHome;

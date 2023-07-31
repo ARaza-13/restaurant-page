@@ -1,7 +1,3 @@
-import createHomePage from "./home";
-import createMenu from "./menu";
-import createContact from "./contact";
+import initializeWebpage from "./webpage";
 
-createHomePage();
-createMenu();
-createContact();
+initializeWebpage();

@@ -1,6 +1,4 @@
 function createMenu() {
-    const content = document.getElementById("content");
-
     const menu = document.createElement("div");
     menu.classList.add("menu");
 
@@ -11,7 +9,7 @@ function createMenu() {
         )
     );
     
-    content.appendChild(menu);
+    return menu;
 }
 
 function createMenuItem(name, price) {
@@ -35,4 +33,10 @@ function createMenuItem(name, price) {
     return menuItem;
 }
 
-export default createMenu;
+function loadMenu() {
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(createMenu());
+}
+
+export default loadMenu;
