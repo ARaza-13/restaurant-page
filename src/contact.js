@@ -1,3 +1,6 @@
+import patrick from './assets/imgs/no-this-is-patrick.gif';
+import krustyKrab from './assets/imgs/krusty-krab.png';
+
 function createContact() {
     const contact = document.createElement("div");
     contact.classList.add("contact");
@@ -9,7 +12,7 @@ function createContact() {
     phone.appendChild(message);
 
     const phoneImg = document.createElement("img");
-    phoneImg.src = "images/no-this-is-patrick.gif";
+    phoneImg.src = `${patrick}`;
     phoneImg.alt = "THIS IS PATRICK!";
     phone.appendChild(phoneImg);
 
@@ -17,7 +20,7 @@ function createContact() {
     address.textContent = "⚓ 831 Bottom Feeder Lane, Downtown Bikini Bottom";
 
     const restaurantLocation = document.createElement("img");
-    restaurantLocation.src = "images/krusty-krab.png";
+    restaurantLocation.src = `${krustyKrab}`;
     restaurantLocation.alt = "Krusty Krab";
 
     contact.appendChild(phone);

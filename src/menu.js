@@ -1,3 +1,5 @@
+import krabbyPatty from './assets/imgs/food/krabby-patty.png';
+
 function createMenu() {
     const menu = document.createElement("div");
     menu.classList.add("menu");
@@ -13,6 +15,7 @@ function createMenu() {
 }
 
 function createMenuItem(name, price) {
+
     const menuItem = document.createElement("div");
     menuItem.classList.add("menu-item");
 
@@ -23,7 +26,7 @@ function createMenuItem(name, price) {
     foodPrice.textContent = price;
 
     const foodImg = document.createElement("img");
-    foodImg.src = `images/food/${name.replace(/\s+/g, '-').toLowerCase()}.png`;
+    foodImg.src = `${krabbyPatty}`;
     foodImg.alt = `${name}`;
 
     menuItem.appendChild(foodImg);

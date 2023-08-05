@@ -1,3 +1,5 @@
+import logoImg from './assets/imgs/krusty-krab-logo.png'
+
 function createHomePage() {
     const home = document.createElement("div");
     home.classList.add("home");
@@ -6,7 +8,7 @@ function createHomePage() {
     headline.textContent = "Krusty Krab";
 
     const logo = document.createElement("img");
-    logo.src = "images/krusty-krab-logo.png";
+    logo.src = logoImg;
     logo.alt = "Krusty Krab Logo";
 
     const paragraph = document.createElement("p");
