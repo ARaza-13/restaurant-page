@@ -1,1 +1,1 @@
-alert('HI from vendor');
+console.log("Hi from Vendor!");

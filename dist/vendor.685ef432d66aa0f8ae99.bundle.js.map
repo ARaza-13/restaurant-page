@@ -1,1 +1,0 @@
-{"version":3,"file":"vendor.685ef432d66aa0f8ae99.bundle.js","mappings":"AAAAA,MAAM","sources":["webpack://restaurant-page/./src/vendor.js"],"sourcesContent":["alert('HI from vendor');"],"names":["alert"],"sourceRoot":""}
