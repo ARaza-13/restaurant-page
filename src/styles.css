@@ -1,3 +1,8 @@
+:root {
+    --website-bg: #38bdf8;
+    --menu-bg: #fed7aa;
+}
+
 @font-face {
     font-family: spongebob-font;
     src: url(./assets/spongeboy-me-bob.ttf);
@@ -5,7 +10,7 @@
 
 body {
     font-family: spongebob-font, sans-serif;
-    background: #38bdf8 url(./assets/imgs/spongebob-clouds.jpg);
+    background: var(--website-bg) url(./assets/imgs/spongebob-clouds.jpg);
 }
 
 img {
