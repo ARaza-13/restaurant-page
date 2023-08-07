@@ -1,6 +1,21 @@
 import loadHome from "./home";
 import loadMenu from "./menu";
 import loadContact from "./contact";
+import logoImg from './assets/imgs/krusty-krab-logo.png';
+
+function createHeader() {
+    const header = document.createElement("header");
+    header.classList.add("header");
+
+    const logo = document.createElement("img");
+    logo.src = logoImg;
+    logo.alt = "Krusty Krab Logo";
+
+    header.appendChild(logo);
+    header.appendChild(createNav());
+
+    return header;
+}
 
 function createNav() {
     const nav = document.createElement("nav");
@@ -61,7 +76,7 @@ function createMain() {
 function initializeWebpage() {
     const content = document.getElementById("content");
 
-    content.appendChild(createNav());
+    content.appendChild(createHeader());
     content.appendChild(createMain());
 
     setActiveButton(document.querySelector(".button-nav"));
