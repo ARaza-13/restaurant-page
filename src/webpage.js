@@ -21,7 +21,7 @@ function createNav() {
     const nav = document.createElement("nav");
 
     const homeButton = document.createElement("button");
-    homeButton.classList.add("button-nav");
+    homeButton.classList.add("btn");
     homeButton.textContent = "Home";
     homeButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
@@ -30,7 +30,7 @@ function createNav() {
     })
 
     const menuButton = document.createElement("button");
-    menuButton.classList.add("button-nav");
+    menuButton.classList.add("btn");
     menuButton.textContent = "Menu";
     menuButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
@@ -39,7 +39,7 @@ function createNav() {
     })
 
     const contactButton = document.createElement("button");
-    contactButton.classList.add("button-nav");
+    contactButton.classList.add("btn");
     contactButton.textContent = "Contact";
     contactButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
@@ -55,7 +55,7 @@ function createNav() {
 }
 
 function setActiveButton(button) {
-    const buttons = document.querySelectorAll(".button-nav");
+    const buttons = document.querySelectorAll(".btn");
 
     buttons.forEach((button) => {
         if (button !== this) {
@@ -81,6 +81,8 @@ function createFooter() {
     copyright.textContent = "Copyright © Eugene H. Krabs";
 
     footer.appendChild(copyright);
+
+    return footer;
 }
 
 function initializeWebpage() {

@@ -1,6 +1,14 @@
+@import "bootstrap";
+
 :root {
     --website-bg: #38bdf8;
     --menu-bg: #fed7aa;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
