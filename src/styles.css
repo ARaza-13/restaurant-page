@@ -13,17 +13,34 @@
 
 @font-face {
     font-family: spongebob-font;
-    src: url(./assets/spongeboy-me-bob.ttf);
+    src: url('./assets/spongeboy-me-bob.ttf');
 }
 
 body {
     font-family: spongebob-font, sans-serif;
-    background: var(--website-bg) url(./assets/imgs/spongebob-clouds.jpg);
+    background: var(--website-bg) url('./assets/imgs/spongebob-clouds.jpg');
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
 }
 
 img {
     display: block;
     width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
 }
 
 .header img {

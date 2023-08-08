@@ -92,7 +92,7 @@ function initializeWebpage() {
     content.appendChild(createMain());
     content.appendChild(createFooter());
 
-    setActiveButton(document.querySelector(".button-nav"));
+    setActiveButton(document.querySelector(".btn"));
     loadHome();
 }
 

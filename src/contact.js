@@ -12,7 +12,7 @@ function createContact() {
     phone.appendChild(message);
 
     const phoneImg = document.createElement("img");
-    phoneImg.src = `${patrick}`;
+    phoneImg.src = patrick;
     phoneImg.alt = "THIS IS PATRICK!";
     phone.appendChild(phoneImg);
 
@@ -20,7 +20,7 @@ function createContact() {
     address.textContent = "⚓ 831 Bottom Feeder Lane, Downtown Bikini Bottom";
 
     const restaurantLocation = document.createElement("img");
-    restaurantLocation.src = `${krustyKrab}`;
+    restaurantLocation.src = krustyKrab;
     restaurantLocation.alt = "Krusty Krab";
 
     contact.appendChild(phone);

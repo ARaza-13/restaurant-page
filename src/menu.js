@@ -26,7 +26,7 @@ function createMenuItem(name, price) {
     foodPrice.textContent = price;
 
     const foodImg = document.createElement("img");
-    foodImg.src = `${krabbyPatty}`;
+    foodImg.src = krabbyPatty;
     foodImg.alt = `${name}`;
 
     menuItem.appendChild(foodImg);
