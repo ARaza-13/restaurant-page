@@ -17,12 +17,15 @@ module.exports = {
     }),
   ],
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
   optimization: {
-    runtimeChunk: 'single',
+    runtimeChunk: true,
+    removeAvailableModules: false,
+    removeEmptyChunks: false,
+    splitChunks: false,
   },
   module: {
     rules: [
