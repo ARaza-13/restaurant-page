@@ -67,7 +67,7 @@ function loadHome() {
 
 /* harmony default export */ const home = (loadHome);
 ;// CONCATENATED MODULE: ./src/assets/imgs/food/krabby-patty.png
-const krabby_patty_namespaceObject = __webpack_require__.p + "01d0b17455e864911ecd.png";
+const krabby_patty_namespaceObject = __webpack_require__.p + "krabby-patty.png";
 ;// CONCATENATED MODULE: ./src/menu.js
 
 
@@ -115,9 +115,9 @@ function loadMenu() {
 
 /* harmony default export */ const menu = (loadMenu);
 ;// CONCATENATED MODULE: ./src/assets/imgs/no-this-is-patrick.gif
-const no_this_is_patrick_namespaceObject = __webpack_require__.p + "9f4b8d9b964a5ecd799a.gif";
+const no_this_is_patrick_namespaceObject = __webpack_require__.p + "no-this-is-patrick.gif";
 ;// CONCATENATED MODULE: ./src/assets/imgs/krusty-krab.png
-const krusty_krab_namespaceObject = __webpack_require__.p + "5198026f09a37217dbc3.png";
+const krusty_krab_namespaceObject = __webpack_require__.p + "krusty-krab.png";
 ;// CONCATENATED MODULE: ./src/contact.js
 
 
@@ -159,7 +159,7 @@ function loadContact() {
 
 /* harmony default export */ const contact = (loadContact);
 ;// CONCATENATED MODULE: ./src/assets/imgs/krusty-krab-logo.png
-const krusty_krab_logo_namespaceObject = __webpack_require__.p + "f87bde2b7f69b7d70ee8.png";
+const krusty_krab_logo_namespaceObject = __webpack_require__.p + "krusty-krab-logo.png";
 ;// CONCATENATED MODULE: ./src/webpage.js
 
 
@@ -267,4 +267,4 @@ function initializeWebpage() {
 webpage();
 /******/ })()
 ;
-//# sourceMappingURL=app.5c00b75dbdd89ee02798.bundle.js.map
+//# sourceMappingURL=app.9aaee98297860ea3fdb5.bundle.js.map
