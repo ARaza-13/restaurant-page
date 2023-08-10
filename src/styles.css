@@ -2,7 +2,9 @@
 
 :root {
     --website-bg: #38bdf8;
+    --nav-bg: #cffafe;
     --menu-bg: #fed7aa;
+    --main-font-color: #b91c1c;
 }
 
 * {
@@ -39,12 +41,27 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
     width: 100%;
     padding: 1rem;
 }
 
 .header img {
     width: 200px;
+}
+
+.nav-tabs {
+    width: 50%;
+}
+
+.nav-link {
+    color: var(--main-font-color);
+    cursor: pointer;
+}
+
+.nav-link:hover, 
+.active {
+    color: var(--main-font-color);
 }
 
 .menu-item img {

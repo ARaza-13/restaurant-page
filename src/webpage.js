@@ -19,51 +19,54 @@ function createHeader() {
 
 function createNav() {
     const nav = document.createElement("nav");
+    nav.classList.add('nav');
+    nav.classList.add('nav-tabs');
+    nav.classList.add('nav-fill');
 
-    const homeButton = document.createElement("button");
-    homeButton.classList.add("btn");
-    homeButton.textContent = "Home";
-    homeButton.addEventListener("click", (e) => {
+    const homeLink = document.createElement("a");
+    homeLink.classList.add("nav-link");
+    homeLink.textContent = "Home";
+    homeLink.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
-        setActiveButton(homeButton);
+        setActiveLink(homeLink);
         loadHome();
     })
 
-    const menuButton = document.createElement("button");
-    menuButton.classList.add("btn");
-    menuButton.textContent = "Menu";
-    menuButton.addEventListener("click", (e) => {
+    const menuLink = document.createElement("a");
+    menuLink.classList.add("nav-link");
+    menuLink.textContent = "Menu";
+    menuLink.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
-        setActiveButton(menuButton);
+        setActiveLink(menuLink);
         loadMenu();
     })
 
-    const contactButton = document.createElement("button");
-    contactButton.classList.add("btn");
-    contactButton.textContent = "Contact";
-    contactButton.addEventListener("click", (e) => {
+    const contactLink = document.createElement("a");
+    contactLink.classList.add("nav-link");
+    contactLink.textContent = "Contact";
+    contactLink.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
-        setActiveButton(contactButton);
+        setActiveLink(contactLink);
         loadContact();
     })
 
-    nav.appendChild(homeButton);
-    nav.appendChild(menuButton);
-    nav.appendChild(contactButton);
+    nav.appendChild(homeLink);
+    nav.appendChild(menuLink);
+    nav.appendChild(contactLink);
 
     return nav;
 }
 
-function setActiveButton(button) {
-    const buttons = document.querySelectorAll(".btn");
+function setActiveLink(link) {
+    const links = document.querySelectorAll(".nav-link");
 
-    buttons.forEach((button) => {
-        if (button !== this) {
-            button.classList.remove("active");
+    links.forEach((link) => {
+        if (link !== this) {
+            link.classList.remove("active");
         }
     });
 
-    button.classList.add("active");
+    link.classList.add("active");
 }
 
 function createMain() {
@@ -92,7 +95,7 @@ function initializeWebpage() {
     content.appendChild(createMain());
     content.appendChild(createFooter());
 
-    setActiveButton(document.querySelector(".btn"));
+    setActiveLink(document.querySelector(".nav-link"));
     loadHome();
 }
 
