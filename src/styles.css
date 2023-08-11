@@ -1,9 +1,10 @@
 @import "bootstrap";
 
 :root {
-    --website-bg: #38bdf8;
+    --website-bg: #58d4ee;
     --nav-bg: #cffafe;
-    --menu-bg: #fed7aa;
+    --main-bg: #e7d6a3;
+    --main-outline: #80572a;
     --main-font-color: #b91c1c;
 }
 
@@ -47,7 +48,7 @@ img {
 }
 
 .header img {
-    width: 200px;
+    width: 125px;
 }
 
 .nav-tabs {
@@ -64,10 +65,80 @@ img {
     color: var(--main-font-color);
 }
 
-.menu-item img {
-    width: 100px;
+.home,
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 618px;
+    height: 525px;
+}
+
+.home img {
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.menu {
+    display: grid;
+    grid-template-areas: 
+        "title title"
+        "patties meals"
+        "sides drinks";
+    grid-gap: 1.5rem;
+}
+
+.menu-title {
+    color: var(--main-font-color);
+    grid-area: title;
+    text-align: center;
+}
+
+.patties {
+    grid-area: patties;
+}
+
+.meals {
+    grid-area: meals;
+}
+
+.sides {
+    grid-area: sides;
+}
+
+.drinks {
+    grid-area: drinks;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item p:first-child {
+    width: 70%;
+}
+
+.main {
+    background-color: var(--main-bg);
+    border: 3px solid var(--main-outline);
+    padding: 4rem;
+}
+
+.contact p {
+    padding: 0.5rem;
+    margin-bottom: 0;
 }
 
 .contact img {
+    padding: 0.5rem;
     width: 350px;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 1rem;
+    width: 100%;
 }

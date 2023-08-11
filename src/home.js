@@ -1,14 +1,21 @@
+import krustyKrabHome from './assets/imgs/krusty-krab-home.jpg';
+
 function createHomePage() {
     const home = document.createElement("div");
     home.classList.add("home");
 
     const headline = document.createElement("h1");
-    headline.textContent = "Krusty Krab";
+    headline.textContent = "Welcome to the Krusty Krab!";
 
-    const paragraph = document.createElement("p");
-    paragraph.textContent = "Welcome to the Krusty Krab! How may we take your order?";
+    const homeImg = document.createElement("img");
+    homeImg.src = krustyKrabHome;
+    homeImg.alt = "Welcome to the Krusty Krab";
+
+    const paragraph = document.createElement("h2");
+    paragraph.textContent = "How may we take your order?";
 
     home.appendChild(headline);
+    home.appendChild(homeImg);
     home.appendChild(paragraph);
 
     return home;
